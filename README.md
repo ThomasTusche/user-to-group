@@ -7,6 +7,9 @@ With this script you can define a set of email addresses which have the permissi
 
 For the automation part, you create a new Email for example using *Workmail* from AWS. Then you create a *SES* Rule to trigger, everytime this mailbox receives an Email. This SES rule triggers a *SNS Topic* which will excecute the Lambda function.
 
+To add someone to his or her AD groups the subject of the email has to be exactly like this: username,adgroup
+For example -> thomastusche,DomainUser
+
 **Things you have to change**
 
 - Change the User you use to connect to the AD
